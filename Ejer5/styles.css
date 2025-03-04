@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode{
+    background-color: #333;
+    color: #fff;
+}
+
+#themeToggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    background: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+body.dark-mode #themeToggle{
+    background: #555;
+}
+
+.moon{
+    display: none;
+}
+
+body.dark-mode .moon{
+    display: inline;
+}
+
+body.dark-mode .sun{
+    display: none;
+}
+
+main{
+    max-width: 700px;
+    margin: 100px auto;
+}
