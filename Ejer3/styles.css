@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#taskInput{
+    list-style-type: none;
+    padding: 8px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+}   
+
+#addTaskButton{
+    padding: 8px 16px;
+    background-color: #1e87e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#addTaskButton:hover{
+    background-color: #0d76d8;
+}
+
+#taskList li{
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
