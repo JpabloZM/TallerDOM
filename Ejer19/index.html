@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carrito de Compras</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda Online</h1>
+        
+        <div class="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="https://trueshop.co/cdn/shop/files/camiseta_clasica_negra_1_720x720.jpg?v=1738203833" alt="Camiseta" class="producto-imagen">
+                    <h3>Camiseta</h3>
+                    <p>$20.00</p>
+                    <button onclick="agregarAlCarrito('Camiseta', 20)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://vansco.vteximg.com.br/arquivos/ids/335626-1000-1000/VN0008NACDX-1.jpg?v=638459329486200000" alt="Pantalón" class="producto-imagen">
+                    <h3>Pantalón</h3>
+                    <p>$35.00</p>
+                    <button onclick="agregarAlCarrito('Pantalón', 35)">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="https://www.brahma.co/images/13740/fit-w-960" alt="Zapatos" class="producto-imagen">
+                    <h3>Zapatos</h3>
+                    <p>$50.00</p>
+                    <button onclick="agregarAlCarrito('Zapatos', 50)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <div class="total">
+                <h3>Total: $<span id="total">0</span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
