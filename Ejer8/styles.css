@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.countdown {
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetButton:hover {
+    background-color: #da190b;
+}
+
+#startButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
