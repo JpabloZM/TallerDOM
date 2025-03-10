@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Precios</h1>
+        <form id="calculadoraForm">
+            <div class="form-group">
+                <label for="producto">Producto:</label>
+                <select id="producto" required>
+                    <option value="10">Camiseta - $10</option>
+                    <option value="20">Pantalón - $20</option>
+                    <option value="15">Zapatos - $15</option>
+                    <option value="5">Calcetines - $5</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="1" value="1" required>
+            </div>
+            
+            <div class="total-section">
+                <h2>Total a Pagar:</h2>
+                <p>$<span id="total">10</span></p>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
