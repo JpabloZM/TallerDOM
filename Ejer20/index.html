@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Distancia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Kilómetros a Millas</h1>
+        
+        <div class="convertidor">
+            <div class="input-grupo">
+                <label for="kilometros">Kilómetros:</label>
+                <input type="number" 
+                       id="kilometros" 
+                       placeholder="Ingrese kilómetros"
+                       min="0"
+                       step="0.01">
+            </div>
+            
+            <div class="flecha">→</div>
+            
+            <div class="resultado-grupo">
+                <label>Millas:</label>
+                <div class="resultado" id="millas">0</div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <p>1 kilómetro = 0.621371 millas</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
